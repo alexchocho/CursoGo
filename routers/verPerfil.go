@@ -18,7 +18,7 @@ func VerPerfil(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Header().Set("context-type", "application/json")
+	w.Header().Set("Context-Type", "application/json")
 	w.WriteHeader(http.StatusCreated)
 	json.NewEncoder(w).Encode(perfil)
 }
