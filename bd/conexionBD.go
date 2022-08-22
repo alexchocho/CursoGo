@@ -9,7 +9,7 @@ import (
 )
 
 var MongoCN = ConectarDB()
-var clientOptions = options.Client().ApplyURI("mongodb+srv://testDB:50l01nt3rn3T@clustertest.zehkr.mongodb.net/test")
+var clientOptions = options.Client().ApplyURI("you_strin-connection")
 
 func ConectarDB() *mongo.Client {
 	client, err := mongo.Connect(context.TODO(), clientOptions)
